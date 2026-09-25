@@ -1,34 +1,39 @@
-# n = int(input())
+#QUESTION1
+#  n = int(input())
 # for i in range(1,n+1):
 #     for j in range(1,i+1):
 #         print(i, end=" ")
 #     print()    
 
-# n = int(input())
+#QUESTION2
+#  n = int(input())
 # for i in range(1,n+1):
 #     for j in range(1,i+1):
 #         print(j, end=" ")
 #     print()    
 
-# n = int(input())
+#QUESTION3
+#  n = int(input())
 # for i in range(n,0,-1):
 #     for j in range(i,0,-1):
 #         print(j, end=" ")
 #     print()        
 
-# n = int(input())
+#QUESTION4
+#  n = int(input())
 # for i in range(n,0,-1):
 #     for j in range(1,i+1):
 #         print(j, end=" ")
 #     print()        
 
+#QUESTION5
 # n = int(input())
 # for i in range(n,0,-1):
 #     for j in range(1,i+1):
 #         print(i, end=" ")
 #     print()   
 
-
+#QUESTION6
 # def fizz_buzz(n):
 #     for i in range(1,n+1):
 #         if i % 3 == 0 and i % 5 == 0:
@@ -42,6 +47,7 @@
 # n = int(input())
 # fizz_buzz(n)
 
+#QUESTION7
 # n = int(input())
 # count = 0
 # for i in range(1,n+1):
@@ -50,6 +56,7 @@
 #         print(count, end=" ") 
 #     print()         
 
+#QUESTION8
 # def count_vowel_and_consonants(sentence):
 #     vowel_count = 0
 #     consonant_count = 0
@@ -69,7 +76,7 @@
 # print("vowels: ", v_count)
 # print("consonant: ", c_count)
 
-
+#QUESTION9
 # n = int(input("enter n here: "))
 # arr = list(map(int, input("enter elements here: ").split()))
 # largest_num = arr[0]
@@ -78,6 +85,7 @@
 #         largest_num = i
 # print(largest_num)        
 
+#QUESTION10
 # n = int(input("enter n here: "))
 # hours = list(map(int, input().split()))
 # min = int(input())
@@ -87,6 +95,7 @@
 #         count += 1
 # print(count)    
     
+#QUESTION11
 # def print_alternative_pointers(n):
 #     left = 1
 #     right = n
@@ -99,13 +108,11 @@
 #             result.append(str(right))
 #         left += 1
 #         right -= 1
-
 #     return " ".join(result)
-
 # result =(print_alternative_pointers(6))
 # print(result)
                 
-
+#QUESTION12
 # n = int(input("enter n here: "))
 # words = input("enter words here: ").split()
 # suffix = input("enter suffix here: ")
@@ -116,6 +123,7 @@
 #         count += 1
 # print(count)        
 
+#QUESTION13
 # def print_nda_ima(n):
 #     for i in range(1,n+1):
 #         if i % 3 == 0 and i % 5 == 0:
@@ -126,11 +134,11 @@
 #             print("ima")
 #         else:
 #             print(i)            
-
 # n = int(input())
 # final= print_nda_ima(n)
 # print(final)            
 
+#QUESTION14
 # def prime_num(n):
 #     if n <= 1:
 #         return"not prime number"
@@ -138,30 +146,28 @@
 #         if n % i == 0:
 #             return"not prime number"
 #     return"prime num"
-
 # n = int(input())
 # final = prime_num(n)
 # print(final)
 
+#QUESTION15
 # n = int(input())
 # arr = list(map(int, input().split()))
 # num = int(input())
 # count = 0
-
 # for i in arr:
 #     if num == i:
 #         count += 1
 # print(count)        
 
+#QUESTION16
 # def check_balanced_parenthesis(s: str):
 #     balance = 0
-
 #     for char in s:
 #         if char == "(":
 #             balance += 1
 #         elif char == ")":
 #             balance -= 1
-
 #         if balance < 0:
 #             print("not balanced")
 
@@ -169,14 +175,12 @@
 #         print("balanced")
 #     else:
 #         print("not balanced")    
-
 # s: str = input()
 # final = (check_balanced_parenthesis(s))
 # print(s)
 
-
+#QUESTION17
 # n = input().strip()
-
 # even_count = 0
 # odd_count = 0
 
@@ -189,7 +193,7 @@
 
 # print(even_count, odd_count)            
 
-
+#QUESTION18
 # def chech_prime_num(n):
 #     if n <= 1:
 #         return"not prime"
@@ -203,6 +207,7 @@
 #     if chech_prime_num(num) == "prime":
 #         print(num,end=" ")
 
+#QUESTION19
 # n = int(input())
 # for i in range(1,n+1):
 #     for j in range(n-i):
@@ -211,13 +216,14 @@
 #         print(k,end =" " if k < i else"")    
 #     print() 
 
-
+#QUESTION20
 # n = int(input())
 # fact = 1
 # for i in range(1,n+1):
 #     fact *= i
 # print((fact))
 
+#QUESTION21
 # n = int(input())
 # sum = 0
 # for i in range(1,n+1):
@@ -225,8 +231,8 @@
 #         sum += i
 # print(sum)  
 
+#QUESTION22
 # n = int(input())
-
 # while n >= 9:
 #     total = 0
 #     for digit in str(n):
@@ -234,6 +240,7 @@
 #     n = total
 # print(n)  
 
+#QUESTION23
 # word = input()
 # for i in word:
 #     if i in ['a','e','i','o','u','A','E','I','O','U']:
@@ -247,7 +254,7 @@
 #         count += 1
 # print(count)        
 
-# #question
+#QUESTION24
 # text = input()
 # letters = 0
 # numbers = 0
@@ -263,7 +270,10 @@
 # print("total numbers:",numbers) 
 # print("others:",others)            
 
-
-n = int(input())
-
-if n % 1 
+#QUESTION25
+name = "Madhav Sharma"
+class_no = 56
+rollno = 4
+print(name)
+print(class_no)
+print(rollno)
