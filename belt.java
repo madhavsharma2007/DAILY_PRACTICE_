@@ -93,17 +93,96 @@
 //     }
 // }
 
-//QUESTION6
-import java.util.Scanner;
+// //QUESTION6
+// import java.util.Scanner;
 
+// public class belt {
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         int a = sc.nextInt();
+//         int b = sc.nextInt();
+//         int c = sc.nextInt();
+
+//         float result = (a + b + c) / 3;
+//         System.out.printf("%.2f\n", result);
+//     }
+// }
+
+// //QUESTION7
+// import java.util.Scanner;
+// public class belt {
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner (System.in);
+//         int marks_obtained = sc.nextInt();
+//         int total_marks = sc.nextInt();
+//         double percentage = ( (double)marks_obtained/total_marks)*100;
+//         System.out.printf("%.2f\n", percentage);
+//     }
+// }
+
+// //QUESTION8
+// import java.util.Scanner;
+// public class belt {
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner (System.in);
+//         int base = sc.nextInt();
+//         int height = sc.nextInt();
+//         double area = (0.5 * height *base);;
+//         System.out.printf("%.2f\n", area);
+//         sc.close();
+//     }
+// }
+
+
+// //QUESTION9
+// import java.io.*;
+// import java.util.Scanner;
+// public class belt{
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner (System.in);
+//         String name = sc.next();
+//         System.out.println(name.charAt(3));
+//     }
+// }
+
+
+//Question10
+// import java.io.*;
+// import java.util.Scanner;
+// public class belt {
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner (System.in);
+//         int num = sc.nextInt();
+//         System.out.println( num % 10);
+//         sc.close();
+//     }
+// }
+
+
+// //QUESTION11
+// import java.io.*;
+// import java.util.Scanner;
+// public class belt {
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner (System.in);
+//         String num = sc.next();
+//         System.out.println(num.charAt(num.length()-1));
+//     }
+// }
+
+
+//  QUESTION12
+import java.io.*;
+import java.util.Scanner;
 public class belt {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int a = sc.nextInt();
-        int b = sc.nextInt();
-        int c = sc.nextInt();
+        Scanner sc = new Scanner (System.in);
+        int num = sc.nextInt();
 
-        float result = (a + b + c) / 3;
-        System.out.printf("%.2f\n", result);
+        if (num < 10){
+            System.out.println("Invalid Number");
+        }else {
+            System.out.println((((num/10)%10)/10)%10);
+        }
     }
 }
