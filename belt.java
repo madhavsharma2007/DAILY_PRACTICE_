@@ -171,18 +171,54 @@
 // }
 
 
-//  QUESTION12
-import java.io.*;
-import java.util.Scanner;
-public class belt {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner (System.in);
-        int num = sc.nextInt();
+// //  QUESTION12
+// import java.io.*;
+// import java.util.Scanner;
+// public class belt {
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner (System.in);
+//         int num = sc.nextInt();
 
-        if (num < 10){
-            System.out.println("Invalid Number");
-        }else {
-            System.out.println((((num/10)%10)/10)%10);
-        }
-    }
-}
+//         if (num < 10){
+//             System.out.println("Invalid Number");
+//         }else {
+//             System.out.println((num/10)%10);
+//         }
+//     }
+// }
+
+
+// //QUESTION13
+// import java.io.*;
+// import java.util.Scanner;
+// public class belt {
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner (System.in);
+//         int num1 = sc.nextInt();
+//         int num2 = sc.nextInt();
+
+//         if (num1 < 10 || num2 < 10) {
+//             System.out.println("Invalid Number");
+//         }else{
+//             int digit1 = (num1 / 10) % 10;
+//             int digit2 = (num2 / 10) % 10;
+//             System.out.println(digit1 + digit2);
+//         }
+//     }
+// }
+
+// //QUESTION14
+// import java.io.*;
+// import java.util.Scanner;
+// public class belt {
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         double num = sc.nextDouble();
+
+//         System.out.println((int)(num *10)%10);
+//         sc.close();
+//     }
+// }
+
+
+// QUESTION15

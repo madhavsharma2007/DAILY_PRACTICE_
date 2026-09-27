@@ -271,9 +271,66 @@
 # print("others:",others)            
 
 #QUESTION25
-name = "Madhav Sharma"
-class_no = 56
-rollno = 4
-print(name)
-print(class_no)
-print(rollno)
+# name = "Madhav Sharma"
+# class_no = 56
+# rollno = 4
+# print(name)
+# print(class_no)
+# print(rollno)
+
+#QUESTION26
+# n = int(input())
+# arr = list(map(int, input().split()))
+# num = int(input())
+# result = []
+# part1 = arr[:len(arr)//2]
+# part2 = arr[len(arr)//2:]
+# for i in range(len(arr)//2):
+#     one = part1[i]
+#     two = part2[i]
+#     result.append(one)
+#     result.append(two)
+# print(*result)
+
+#QUESTION27
+# n =int(input())
+# num = n
+# count = 0
+
+# while num > 0:
+#     count += 1
+#     num //= 10
+# print(count)    
+
+#QUESTION28
+# n =int(input())
+# num = n
+# result = 0
+
+# while num > 0:
+#     last_digit = num % 10
+#     result = (result*10) + last_digit
+#     num //= 10
+
+# if n == result:
+#     print("is_Palindrome")
+# else:
+#     print("not_Palindrome")       
+
+#QUESTION29
+n = int(input())
+num = n
+nod =len(str(n))
+total = 0
+
+while num > 0:
+    lastdigit = num % 10
+    result = lastdigit ** nod
+    total += result
+    num //= 10
+print(total)
+
+if total == n:
+    print("is_Armstrong")
+else:
+    print("not_Armstrong")    
