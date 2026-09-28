@@ -318,19 +318,51 @@
 #     print("not_Palindrome")       
 
 #QUESTION29
-n = int(input())
-num = n
-nod =len(str(n))
-total = 0
+# n = int(input())
+# num = n
+# nod =len(str(n))
+# total = 0
 
-while num > 0:
-    lastdigit = num % 10
-    result = lastdigit ** nod
-    total += result
-    num //= 10
-print(total)
+# while num > 0:
+#     lastdigit = num % 10
+#     result = lastdigit ** nod
+#     total += result
+#     num //= 10
+# print(total)
 
-if total == n:
-    print("is_Armstrong")
-else:
-    print("not_Armstrong")    
+# if total == n:
+#     print("is_Armstrong")
+# else:
+#     print("not_Armstrong")    
+
+#QUESTION30
+# import math
+# n =int(input())
+# num = n
+# total = 0
+
+# while num > 0:
+#     last_digit = num % 10
+#     total += math.factorial(last_digit)
+#     num //= 10
+
+# if total == n:
+#     print("is_Strong")
+# else:
+#     print("not a strong number")  
+
+# QUESTION31
+# from math import sqrt
+# num = int(input())
+# result = []
+
+# for i in range(1,int(sqrt(num)+1)):
+#     if num % i == 0:
+#         result.append(i)
+#         if num//i != i:
+#             result.append(num//i)
+
+# result.sort()
+# print(result)
+
+   
