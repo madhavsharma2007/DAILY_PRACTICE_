@@ -323,6 +323,7 @@
 # nod =len(str(n))
 # total = 0
 
+
 # while num > 0:
 #     lastdigit = num % 10
 #     result = lastdigit ** nod
@@ -351,7 +352,7 @@
 # else:
 #     print("not a strong number")  
 
-# QUESTION31
+#QUESTION31
 # from math import sqrt
 # num = int(input())
 # result = []
@@ -365,4 +366,14 @@
 # result.sort()
 # print(result)
 
-   
+#QUESTION32
+nums  = list(map(int, input().split()))
+n = len(nums)
+hash_map = {}
+for i in range(1,n):
+    hash_map[nums[i]] = hash_map.get(nums[i],0) +1
+print(hash_map)    
+
+
+
+
