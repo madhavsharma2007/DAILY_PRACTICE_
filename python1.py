@@ -372,8 +372,72 @@
 # hash_map = {}
 # for i in range(1,n):
 #     hash_map[nums[i]] = hash_map.get(nums[i],0) +1
-# print(hash_map)    
+# print(hash_map)     
+
+# QUESTION33
+# name1 = input()
+# unit1_sold = int(input())
+# unit1_price = int(input())
+
+# name2 = input()
+# unit2_sold = int(input())
+# unit2_price = int(input())
+
+# name3 = input()
+# unit3_sold = int(input())
+# unit3_price = int(input())
+
+# revenue1 = unit1_price * unit1_sold
+# revenue2 = unit2_price * unit2_sold
+# revenue3 = unit3_price * unit3_sold
+
+# def classify(revenue):
+    
+#     if revenue >= 500:
+#         return "High"
+#     elif revenue >= 200:
+#         return "Medium"
+#     else:
+#         return "Low"
+
+# p1_class = classify(revenue1)
+# p2_class = classify(revenue2)
+# p3_class = classify(revenue3)
+
+# classes = (p1_class,p2_class,p3_class)
+# names =(name1,name2,name3)
+# revenues = (revenue1,revenue2,revenue3)
+
+# total_revenue = sum(revenues)
+# max_revenue = max(revenues)
+# top_index = revenues.index(max_revenue)
+# top_product = names[top_index]
+# high_count = classes.count("High")
+
+# print(f"Product 1: {name1}, Revenue: ${revenue1:.2f} ({p1_class})")
+# print(f"Product 2: {name2}, Revenue: ${revenue2:.2f} ({p2_class})")
+# print(f"Product 3: {name3}, Revenue: ${revenue3:.2f} ({p3_class})")
+# print("-" * 30)
+# print(f"Total Revenue: ${total_revenue:.2f}")
+# print(f"Top Performer: {top_product} (${max_revenue:.2f})")
+# print(f"High Performers Count: {high_count}")
 
 
 
+#QUESTION34
+# def print_pattern(n):
+#     for i in range (1,n+1):
+#        row_items = [str(j) for j in range(1,i+1)]
+#        print("*".join(row_items))
+# n = int(input())
+# print(print_pattern(n))
 
+#QUESTION35
+# def inverted_triangle(n):
+#     for i in range(n,0,-1):
+#         for j in range(1,i+1):
+#             print("*",end=" ")
+#         print()
+
+# n = int(input())
+# print(inverted_triangle(n))
