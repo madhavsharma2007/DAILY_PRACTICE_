@@ -367,12 +367,12 @@
 # print(result)
 
 #QUESTION32
-nums  = list(map(int, input().split()))
-n = len(nums)
-hash_map = {}
-for i in range(1,n):
-    hash_map[nums[i]] = hash_map.get(nums[i],0) +1
-print(hash_map)    
+# nums  = list(map(int, input().split()))
+# n = len(nums)
+# hash_map = {}
+# for i in range(1,n):
+#     hash_map[nums[i]] = hash_map.get(nums[i],0) +1
+# print(hash_map)    
 
 
 
