@@ -221,4 +221,30 @@
 // }
 
 
-// QUESTION15
+// //QUESTION15
+// import java.io.*;
+// import java.util.Scanner;
+
+// public class belt {
+//     public static void main(String[] args){
+//         Scanner sc = new Scanner(System.in);
+//         int n = sc.nextInt();
+//         for (int i = 1 ; i <= n ; i++){
+//             System.out.print(i + " ");
+//         }
+//     }
+// }
+
+
+//QUESTION16
+import java.io.*;
+import java.util.Scanner;
+public class belt {
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        for ( int i = n ; i >= 1; i--){
+            System.out.print(i + " ");
+        }
+        }
+}
