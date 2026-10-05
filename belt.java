@@ -263,15 +263,53 @@
 // }
 
 
-//QUESTION19
+// //QUESTION19
+// import java.io.*;
+// import java.util.Scanner;
+// public  class belt {
+//     public static void main(String[] args){
+//         Scanner sc = new Scanner (System.in);
+//         int n = sc.nextInt();
+//         for(int i = 1; i <= n*2 ; i += 2){
+//             System.out.print(i + " ");
+//         }  
+//     }
+// }
+
+
+// //QUESTION20
+// import java.io.*;
+// import java.util.Scanner;
+// public class belt {
+//     public static void main(String[] args){
+//         Scanner sc = new Scanner(System.in);
+//         int n = sc.nextInt();
+//         for( int i = 1 ; i <= 10 ; i++){
+//             System.out.println(n*i);
+//         }
+//     }
+// }
+
+
+// //QUESTION21
+// import java.io.*;
+// import java.util.Scanner;
+// public class belt {
+//     public static void main(String[] args){
+//         for ( int i = 0 ; i <= 100 ; i++){
+//             System.out.print(i + " ");
+//         }
+//     }
+// }
+
+
+//QUESTION22
 import java.io.*;
 import java.util.Scanner;
-public  class belt {
+public class belt{
     public static void main(String[] args){
-        Scanner sc = new Scanner (System.in);
-        int n = sc.nextInt();
-        for(int i = 1; i <= n*2 ; i += 2){
+        for ( int i = 1 ; i <= 100 ; i += 2){
             System.out.print(i + " ");
-        }  
+        }
     }
 }
