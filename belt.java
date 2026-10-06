@@ -303,13 +303,13 @@
 // }
 
 
-//QUESTION22
-import java.io.*;
-import java.util.Scanner;
-public class belt{
-    public static void main(String[] args){
-        for ( int i = 1 ; i <= 100 ; i += 2){
-            System.out.print(i + " ");
-        }
-    }
-}
+// //QUESTION22
+// import java.io.*;
+// import java.util.Scanner;
+// public class belt{
+//     public static void main(String[] args){
+//         for ( int i = 1 ; i <= 100 ; i += 2){
+//             System.out.print(i + " ");
+//         }
+//     }
+// }

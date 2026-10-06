@@ -441,3 +441,5 @@
 
 # n = int(input())
 # print(inverted_triangle(n))
+
+#QUESTION36
