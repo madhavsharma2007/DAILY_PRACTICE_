@@ -1,4 +1,6 @@
 #PYTHON DSA QUESTIONS SOLUTION SERIAL WISE:
+## 🚀 Data Structures & Algorithms (DSA) Solutions
+#Welcome to my personal repository dedicated to mastering **Data Structures & Algorithms**. This repo tracks my problem-solving journey across platforms like **LeetCode, HackerRank, and Codeforces**.
 
 # #QUESTION1(EXTRACTING DIGITS);
 # n = int(input())
@@ -57,11 +59,11 @@
 # result.sort()
 # print(result)
 
-#QUESTION6(FREQUENCY MAP);
-nums = [5,6,7,7,1,9,5,111,1,1,1]
-n = len(nums)
-hash_map= {}
+# #QUESTION6(FREQUENCY MAP);
+# nums = [5,6,7,7,1,9,5,111,1,1,1]
+# n = len(nums)
+# hash_map= {}
 
-for i in range(0,n):
-    hash_map[nums[i]] = hash_map.get(nums[i],0)+1
-print(hash_map)
+# for i in range(0,n):
+#     hash_map[nums[i]] = hash_map.get(nums[i],0)+1
+# print(hash_map)
