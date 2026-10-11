@@ -443,3 +443,56 @@
 # print(inverted_triangle(n))
 
 #QUESTION36
+# rows = int(input())
+# for i in range(rows):
+#     for j in range(rows-i-1):
+#         print(" ",end=" ")
+#     for k in range(2* i +1):
+#         print("*",end=" ")
+#     print()
+
+# #QUESTION37
+# n =int(input())
+# for i in range(1,n+1):
+#     for j in range(1,n+1):
+#         print("*", end=" ")
+#     print()
+
+#QUESTION38
+# n =int(input())
+# for i in range(1,n+1):
+#     for j in range(1,i+1):
+#         print("*", end=" ")
+#     print()
+
+#QUESTION39
+# n = int(input())
+# for i in range(n,0,-1):
+#     for j in range(i):
+#         print("*", end=" ")
+#     print()
+
+#QUESTION40
+# n = int(input())
+# for i in range(1,n+1):
+#     for j in range(1,i+1):
+#         print("*", end=" ")
+#     print()
+# for k in range(n-1,0,-1):
+#     for l in range(k):
+#         print("*", end=" ")
+#     print()
+
+#QUESTION41
+# n = int(input())
+# for i in range(1,n+1):
+#     for j in range(1,i+1):
+#         print(j, end=" ")
+#     print()
+
+#QUESTION42
+n = int(input())
+for i in range(n,0,-1):
+    for j in range(i,0,-1):
+        print(j, end=" ")
+    print()
