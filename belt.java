@@ -184,10 +184,11 @@
 // }
 // }
 
-// //QUESTION13
+// // //QUESTION13
 // import java.io.*;
 // import java.util.Scanner;
-// public class belt {
+
+// public class belt {System.in
 // public static void main(String[] args) {
 // Scanner sc = new Scanner (System.in);
 // int num1 = sc.nextInt();
@@ -293,14 +294,148 @@
 // }
 // }
 
-//QUESTION22
+// //QUESTION22
+// import java.io.*;
+// import java.util.Scanner;
+
+// public class belt {
+// public static void main(String[] args) {
+// for (int i = 1; i <= 100; i += 2) {
+// System.out.print(i + " ");
+// }
+// }
+// }
+
+// //QUESTION 23
+// import java.io.*;
+// import java.util.Scanner;
+
+// public class belt {
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         double totalBill = sc.nextDouble();
+//         double finalBill = 0.00;
+//         String isPremium = sc.next();
+
+//         if (isPremium.equals("true")) {
+//             if (totalBill > 2000) {
+//                 finalBill = totalBill - (totalBill * 0.2);
+//             } else {
+//                 finalBill = totalBill - (totalBill * 0.1);
+//             }
+//         } else if (isPremium.equals("false")) {
+//             if (totalBill > 2000) {
+//                 finalBill = totalBill - (totalBill * 0.05);
+//             } else {
+//                 finalBill = totalBill;
+//             }
+//         }
+
+//         System.out.printf("%.1f\n", finalBill);
+//         sc.close();
+//     }
+// }
+
+//QUESTION24
+// import java.util.Scanner;
+
+// public class belt {
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+
+//         double kwh = sc.nextDouble();
+//         boolean isPeak = sc.nextBoolean();
+
+//         double totalCost = kwh * 15.0;
+
+//         if (isPeak) {
+//             totalCost += totalCost * 0.25; // adds 25% to base cost
+//         }
+//         if (kwh > 50.0) {
+//             totalCost -= 50.0;
+//         }
+//         System.out.println(totalCost);
+
+//         sc.close();
+//     }
+// }
+
+// //QUESTION25
+// import java.io.*;
+// import java.util.Scanner;
+// public class belt {
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         int avaliableStock = sc.nextInt();
+//         int requestedToken = sc.nextInt();
+
+//         if (requestedToken <= 0) {
+//             System.out.println("Invalid Token Quantity");
+//         } else if (requestedToken > avaliableStock) {
+//             System.out.println("Insufficient Stock");
+//         } else {
+//             System.out.println("Order Placed. Remaining Stock: " + (avaliableStock - requestedToken));
+//         }
+
+//         sc.close();
+//     }
+// }
+
+// //QUESTION26
+// import java.io.*;
+// import java.util.Scanner;
+
+// public class belt {
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         double accountBalance = sc.nextDouble();
+//         int withdrawalAmount = sc.nextInt();
+
+//         if (withdrawalAmount > accountBalance) {
+//             System.out.println("Insufficient Balance");
+//         }
+//         if (withdrawalAmount % 100 != 0) {
+//             System.out.println("Invalid Amount: Must be multiple of 100");
+//         } else {
+//             System.out.println("Withdrawal Successful. Remaining Balance: " + (accountBalance - withdrawalAmount-15));
+//         }
+//     }
+// }
+
+//QUESTION27
 import java.io.*;
 import java.util.Scanner;
 
 public class belt {
     public static void main(String[] args) {
-        for (int i = 1; i <= 100; i += 2) {
-            System.out.print(i + " ");
+        Scanner sc = new Scanner(System.in);
+        String mode = sc.next();
+        boolean hasFASTag = sc.nextBoolean();
+        int baseFare = 0;
+
+        if (mode == "car") {
+            baseFare = 100;
+            if (hasFASTag) {
+                System.out.println(baseFare * 0.1);
+            } else {
+                System.out.println(baseFare + 50);
+            }
+        } else if (mode == "Truck") {
+            baseFare = 250;
+            if (hasFASTag) {
+                System.out.println(baseFare * 0.1);
+            } else {
+                System.out.println(baseFare + 50);
+            }
+        } else if (mode == "bus") {
+            baseFare = 200;
+            if (hasFASTag) {
+                System.out.println(baseFare * 0.1);
+            } else {
+                System.out.println(baseFare + 50);
+            }
+        } else {
+            System.out.println("Invalid Vehicle Type");
         }
     }
 }

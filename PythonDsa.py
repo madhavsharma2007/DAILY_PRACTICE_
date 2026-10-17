@@ -80,15 +80,15 @@
 #     else:
 #         print(hash_list[num])
 
-#QUESTION8(ALPHABETICAL HASH MAPING);
-s = "azyxyyzaaaa"
-q = ["d" ,"a" , "y" , "x"]
-hash_list = [0] * 27
-for ch in s:
-    ascii = ord(ch)
-    index = ascii - 97
-    hash_list[index] += 1
-for ch in q:
-    ascii = ord(ch)
-    index = ascii - 97
-    print(hash_list[index])
+# #QUESTION8(ALPHABETICAL HASH MAPING);
+# s = "azyxyyzaaaa"
+# q = ["d" ,"a" , "y" , "x"]
+# hash_list = [0] * 27
+# for ch in s:
+#     ascii = ord(ch)
+#     index = ascii - 97
+#     hash_list[index] += 1
+# for ch in q:
+#     ascii = ord(ch)
+#     index = ascii - 97
+#     print(hash_list[index])
