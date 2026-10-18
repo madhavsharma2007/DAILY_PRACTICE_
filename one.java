@@ -20,29 +20,48 @@
 //     }
 // }
 
-//  QUESTION30
-import java.util.Scanner;
+// //  QUESTION30
+// import java.util.Scanner;
+// import java.io.*;
+
+// public class one {
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         int keys = sc.nextInt();
+//         switch (keys) {
+//             case 1:
+//                 System.out.println("one");
+//                 break;
+//             case 2:
+//                 System.out.println("two");
+//                 break;
+//             case 3:
+//                 System.out.println("three");
+//                 break;
+//             case 4:
+//                 System.out.println("four");
+//                 break;
+//             default:
+//                 System.out.println("Default");
+//         }
+//     }
+// }
+
+//     QUESTION 31
 import java.io.*;
+import java.util.Scanner;
 
 public class one {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int keys = sc.nextInt();
-        switch (keys) {
-            case 1:
-                System.out.println("one");
-                break;
-            case 2:
-                System.out.println("two");
-                break;
-            case 3:
-                System.out.println("three");
-                break;
-            case 4:
-                System.out.println("four");
-                break;
-            default:
-                System.out.println("Default");
+        int Mb = sc.nextInt();
+
+        if (Mb <= 1500) {
+            System.out.println("Normal Usage");
+        } else if (Mb >= 1500 && Mb <= 2000) {
+            System.out.println("Warning: 75% Data Exhausted");
+        } else {
+            System.out.println("Data Exhausted. Extra Charge: " + (Mb - 2000) * 0.50);
         }
     }
 }
