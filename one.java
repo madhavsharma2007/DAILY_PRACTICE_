@@ -47,21 +47,21 @@
 //     }
 // }
 
-//     QUESTION 31
-import java.io.*;
-import java.util.Scanner;
+// //     QUESTION 31
+// import java.io.*;
+// import java.util.Scanner;
+// public class one {
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         int Mb = sc.nextInt();
+//         if (Mb <= 1500) {
+//             System.out.println("Normal Usage");
+//         } else if (Mb >= 1500 && Mb <= 2000) {
+//             System.out.println("Warning: 75% Data Exhausted");
+//         } else {
+//             System.out.println("Data Exhausted. Extra Charge: " + (Mb - 2000) * 0.50);
+//         }
+//     sc.close();
+//     }
+// }
 
-public class one {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int Mb = sc.nextInt();
-
-        if (Mb <= 1500) {
-            System.out.println("Normal Usage");
-        } else if (Mb >= 1500 && Mb <= 2000) {
-            System.out.println("Warning: 75% Data Exhausted");
-        } else {
-            System.out.println("Data Exhausted. Extra Charge: " + (Mb - 2000) * 0.50);
-        }
-    }
-}

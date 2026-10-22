@@ -1,6 +1,5 @@
 // //QUESTION1
 // import java.util.Scanner;
-
 // public class belt {
 // public static void main(String[] args) {
 // Scanner sc = new Scanner(System.in);
@@ -12,7 +11,6 @@
 
 // //QUESTION2
 // import java.util.Scanner;
-
 // public class belt {
 // public static void convertToSeconds(int hours) {
 // int seconds = hours * 3600;
@@ -48,7 +46,7 @@
 // //QUESTION4
 // import java.util.Scanner;
 
-// public class TemperatureConverter {
+// public class belt {
 
 // public static void convertTemperature(float temp, String unit) {
 // float result;
@@ -205,18 +203,18 @@
 // }
 
 // //QUESTION14
-import java.io.*;
-import java.util.Scanner;
+// import java.io.*;
+// import java.util.Scanner;
 
-public class belt {
-public static void main(String[] args) {
-Scanner sc = new Scanner(System.in);
-double num = sc.nextDouble();
+// public class belt {
+// public static void main(String[] args) {
+// Scanner sc = new Scanner(System.in);
+// double num = sc.nextDouble();
 
-System.out.println((int)(num *10)%10);
-sc.close();
-}
-}
+// System.out.println((int) (num * 10) % 10);
+// sc.close();
+// }
+// }
 
 // //QUESTION15
 // import java.io.*;
@@ -405,40 +403,63 @@ sc.close();
 // }
 // }
 
-// QUESTION27
-// import java.io.*;
+// //QUESTION27
 // import java.util.Scanner;
-//
+
 // public class belt {
-//     public static void main(String[] args) {
-//         Scanner sc = new Scanner(System.in);
-//         String mode = sc.next();
-//         boolean hasFASTag = sc.nextBoolean();
-//         int baseFare = 0;
-//
-//         if (mode == "car") {
-//             baseFare = 100;
-//             if (hasFASTag) {
-//                 System.out.println(baseFare * 0.1);
-//             } else {
-//                 System.out.println(baseFare + 50);
-//             }
-//         } else if (mode == "Truck") {
-//             baseFare = 250;
-//             if (hasFASTag) {
-//                 System.out.println(baseFare * 0.1);
-//             } else {
-//                 System.out.println(baseFare + 50);
-//             }
-//         } else if (mode == "bus") {
-//             baseFare = 200;
-//             if (hasFASTag) {
-//                 System.out.println(baseFare * 0.1);
-//             } else {
-//                 System.out.println(baseFare + 50);
-//             }
-//         } else {
-//             System.out.println("Invalid Vehicle Type");
-//         }
-//     }
+// public static void main(String[] args) {
+// Scanner sc = new Scanner(System.in);
+// String mode = sc.next();
+// boolean hasFASTag = sc.nextBoolean();
+// double tollAmount = 0.0;
+// boolean isValid = true;
+
+// if (mode.equalsIgnoreCase("Car")) {
+// double baseFare = 100;
+// if (hasFASTag) {
+// tollAmount = baseFare - (baseFare * 0.1);
+// } else {
+// tollAmount = baseFare + 50;
+// }
+// } else if (mode.equalsIgnoreCase("Truck")) {
+// double baseFare = 250;
+// if (hasFASTag) {
+// tollAmount = baseFare - (baseFare * 0.1);
+// } else {
+// tollAmount = baseFare + 50;
+// }
+// } else if (mode.equalsIgnoreCase("Bus")) {
+// double baseFare = 200;
+// if (hasFASTag) {
+// tollAmount = baseFare - (baseFare * 0.1);
+// } else {
+// tollAmount = baseFare + 50;
+// }
+// } else {
+// isValid = false;
+// System.out.println("Invalid Vehicle Type");
+// }
+// if (isValid) {
+// System.out.println("Toll Amount: " + tollAmount);
+// }
+// sc.close();
+// }
+// }
+
+// QUESTION28
+// import java.util.Scanner;
+// public class belt {
+// public static void main(String[] args) {
+// Scanner sc = new Scanner(System.in);
+// int totalBill;
+// int units = sc.nextInt();
+// if (units <= 100) {
+// totalBill = units * 2;
+// } else if (units <= 300) {
+// totalBill = (100 * 2) + (units - 100) * 4;
+// } else {
+// totalBill = (100 * 2) + (200 * 4) + ((units - 300) * 7);
+// }
+// System.out.println(totalBill);
+// }
 // }

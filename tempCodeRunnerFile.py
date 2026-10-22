@@ -1,7 +1,5 @@
-#QUESTION1(extercting digit);
-# n = int(input())
-# num = n
-# while num > 0:
-#     last_digit = num % 10
-#     print(last_digit)
-#     num //= 10
+n = int(input())
+for i in range(1,n+1):
+    for j in range(1,i+1):
+        print(j, end=" ")
+    print()

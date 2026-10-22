@@ -496,3 +496,109 @@
 #     for j in range(i,0,-1):
 #         print(j, end=" ")
 #     print()
+
+# QUESTION43
+# a = input().strip()
+# b = input().strip()
+# c = input().strip()
+
+# # Check validation in exact order using string comparisons
+# if not (a.isdigit() and a != "0"):
+#     print("Error: side a must be a positive whole number")
+# elif not (b.isdigit() and b != "0"):
+#     print("Error: side b must be a positive whole number")
+# elif not (c.isdigit() and c != "0"):
+#     print("Error: side c must be a positive whole number")
+# else:
+#     # Convert to integers after validation
+#     A = int(a)
+#     B = int(b)
+#     C = int(c)
+
+#     # Triangle Inequality Check
+#     if not (A + B > C and B + C > A and A + C > B):
+#         print("Error: sides do not form a valid triangle")
+#     else:
+#         # Classification by sides
+#         if A == B == C:
+#             side_type = "Equilateral"
+#         elif A == B or B == C or C == A:
+#             side_type = "Isosceles"
+#         else:
+#             side_type = "Scalene"
+
+#         # Classification by angle (sorting integers)
+#         sides = sorted([A, B, C])
+#         s1, s2, largest = sides[0], sides[1], sides[2]
+
+#         largest_sq = largest**2
+#         sq_other_side = s1**2 + s2**2
+
+#         if largest_sq == sq_other_side:
+#             angletype = "Right-angled"
+#         elif largest_sq < sq_other_side:
+#             angletype = "Acute"
+#         else:
+#             angletype = "Obtuse"
+
+#         # Output report
+#         print(f"Sides: a={A}, b={B}, c={C}")
+#         print(f"Type by Sides: {side_type}")
+#         print(f"Type by Angle: {angletype}")
+#         print(f"Classification: {side_type} {angletype} Triangle")
+    
+#QUESTION44
+# raw_length = input()
+# raw_height = input()
+# raw_width = input()
+
+# if not ( raw_length.isdigit() and raw_length != "0"):
+#     print("ERROR: length must be positive")
+# elif not ( raw_width.isdigit() and raw_width != "0"):
+#     print("ERROR: width must be positive")
+# elif not ( raw_height.isdigit() and raw_height != "0"):
+#     print("ERROR: height must be positive")
+# else:
+#     L = int(raw_length)
+#     W = int(raw_width)
+#     H = int(raw_height)
+
+#     volume = L * W * H
+#     shape = "Cube" if (L == W == H) else "Rectangular Prism"
+
+#     print(f"Dimensions: L={L}, W={W}, H={H}")
+#     print(f"Volume: {volume}")
+#     print(f"Shape: {shape}")
+
+#QUESTION45
+# raw_length = input()
+# raw_width = input()
+# raw_heigth = input()
+
+# if not ( raw_length.isdigit() and raw_length != "0"):
+#     print("Error: length must be positive integer")
+# elif not ( raw_width.isdigit() and raw_width != "0"):
+#     print("Error: width must be positive integer")
+# elif not ( raw_heigth.isdigit() and raw_heigth != "0"):
+#     print("Error: height must be positive integer")
+# else:
+
+#     L = int(raw_length)
+#     W = int(raw_width)
+#     H = int(raw_heigth)
+
+#     surface_area = 2 * (L * W + W * H + H * L)
+#     space_diagonal_squared =  L **2 + W ** 2+ H ** 2
+
+#     if L == W == H:
+#         symmetry = "Perfect Cube"
+#     elif L == W:
+#         symmetry = "Uniform Base"
+#     else:
+#         symmetry = "Irregular"
+    
+    
+#     print(f"Box: L={L}, W={W}, H={H}")
+#     print(f"Surface Area: {surface_area}")
+#     print(f"Diagonal Squared: {space_diagonal_squared}")
+#     print(f"Symmetry: {symmetry}")
