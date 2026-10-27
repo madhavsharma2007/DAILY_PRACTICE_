@@ -596,14 +596,72 @@
 #         symmetry = "Uniform Base"
 #     else:
 #         symmetry = "Irregular"
-    
-    
+
 #     print(f"Box: L={L}, W={W}, H={H}")
 #     print(f"Surface Area: {surface_area}")
 #     print(f"Diagonal Squared: {space_diagonal_squared}")
 #     print(f"Symmetry: {symmetry}")
 #
 
+# #QUESTION46
+# n = int(input())
+# budget = 0
+# standard = 0
+# premium = 0
+# qualified = []
+# adjusted = []
+
+# for i in range(n):
+#     amount = int(input())
+
+#     if amount < 500:
+#         budget += 1
+#     elif 500 <= amount < 2000:
+#         standard += 1
+#     else:
+#         premium += 1
+
+#     if 1000 <= amount <= 3000:
+#         qualified.append(amount)
+#         adjusted.append(amount - 100)
+
+# print(f"Budget: {budget}")
+# print(f"Standard: {standard}")
+# print(f"Premium: {premium}")
+# print(f"Qualified: {qualified}")
+# print(f"Adjusted: {adjusted}")
+
+#QUESTION47
+n = int(input())
+if n == 0:
+    print("No Scores")
+else:
+    scores = []
+    for i in range(n):
+        scores.append(int(input()))
+
+    total_sum = 0
+    min_score = scores[0]
+    max_score = scores[0]
+
+    for s in scores:
+        total_sum += s
+        if s < min_score:
+            min_score = s
+        if s > max_score:
+            max_scores = s 
+
+    avg = total_sum / n
+
+    above_avg = 0
+    for s in scores:
+        if s > avg:
+            above_avg += 1
 
 
-
+print(f"Count: {n}")
+print(f"Sum: {total_sum}")
+print(f"Minimum: {min_score}")
+print(f"Maximum: {max_score}")
+print(f"Average: {avg:.2f}")
+print(f"Above average: {above_avg}")
