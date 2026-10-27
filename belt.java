@@ -167,20 +167,21 @@
 // }
 
 // // QUESTION12
-// import java.io.*;
-// import java.util.Scanner;
-// public class belt {
-// public static void main(String[] args) {
-// Scanner sc = new Scanner (System.in);
-// int num = sc.nextInt();
+import java.io.*;
+import java.util.Scanner;
 
-// if (num < 10){
-// System.out.println("Invalid Number");
-// }else {
-// System.out.println((num/10)%10);
-// }
-// }
-// }
+public class belt {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int num = sc.nextInt();
+
+        if (num < 10) {
+            System.out.println("Invalid Number");
+        } else {
+            System.out.println((num / 10) % 10);
+        }
+    }
+}
 
 // // //QUESTION13
 // import java.io.*;
@@ -468,18 +469,18 @@
 // import java.io.*;
 // import java.util.Scanner;
 // public class belt {
-//     public static void main(String[] args) {
-//         Scanner sc = new Scanner(System.in);
-//         double amount;
-//         double gross_amount;
-//         int final_amount;
-//         double price = sc.nextDouble();
-//         int qty = sc.nextInt();
-//         amount = price * qty;
-//         gross_amount = amount + amount * 0.18;
-//         final_amount = (int) gross_amount;
-//         System.out.println(final_amount);
-//     }
+// public static void main(String[] args) {
+// Scanner sc = new Scanner(System.in);
+// double amount;
+// double gross_amount;
+// int final_amount;
+// double price = sc.nextDouble();
+// int qty = sc.nextInt();
+// amount = price * qty;
+// gross_amount = amount + amount * 0.18;
+// final_amount = (int) gross_amount;
+// System.out.println(final_amount);
+// }
 // }
 
 // //QUESTION30
@@ -487,17 +488,17 @@
 // import java.util.Scanner;
 
 // public class belt {
-//     public static void main(String[] args) {
-//         Scanner sc = new Scanner(System.in);
-//         float attendance = sc.nextFloat();
-//         Boolean med_cer = sc.nextBoolean();
+// public static void main(String[] args) {
+// Scanner sc = new Scanner(System.in);
+// float attendance = sc.nextFloat();
+// Boolean med_cer = sc.nextBoolean();
 
-//         if (attendance >= 75 || attendance >= 65 && med_cer.equals(true)) {
-//             System.out.println("Eligible");
-//         } else {
-//             System.out.println("Not Eligible");
-//         }
-//     }
+// if (attendance >= 75 || attendance >= 65 && med_cer.equals(true)) {
+// System.out.println("Eligible");
+// } else {
+// System.out.println("Not Eligible");
+// }
+// }
 // }
 
 // //QUESTION31
@@ -505,30 +506,30 @@
 // import java.util.Scanner;
 
 // public class belt {
-//     public static void main(String[] args) {
-//         Scanner sc = new Scanner(System.in);
-//         float bill;
-//         float finalbill;
-//         int purchase = sc.nextInt();
-//         Boolean premier = sc.nextBoolean();
+// public static void main(String[] args) {
+// Scanner sc = new Scanner(System.in);
+// float bill;
+// float finalbill;
+// int purchase = sc.nextInt();
+// Boolean premier = sc.nextBoolean();
 
-//         if (purchase < 1000) {
-//             bill = purchase;
-//         } else if (purchase >= 1000 && purchase <= 5000) {
-//             bill = (int) (purchase - purchase * 0.10);
-//         } else {
-//             bill = (int) (purchase - purchase * 0.20);
-//         }
+// if (purchase < 1000) {
+// bill = purchase;
+// } else if (purchase >= 1000 && purchase <= 5000) {
+// bill = (int) (purchase - purchase * 0.10);
+// } else {
+// bill = (int) (purchase - purchase * 0.20);
+// }
 
-//         if (premier.equals(true)) {
-//             finalbill = (int) (bill - bill * 0.05);
-//         } else {
-//             finalbill = (int) (bill);
-//         }
+// if (premier.equals(true)) {
+// finalbill = (int) (bill - bill * 0.05);
+// } else {
+// finalbill = (int) (bill);
+// }
 
-//         System.out.println(bill);
-//         System.out.println(finalbill);
-//     }
+// System.out.println(bill);
+// System.out.println(finalbill);
+// }
 // }
 
 // //QUESTION32
@@ -536,34 +537,34 @@
 // import java.util.Scanner;
 
 // public class belt {
-//     public static void main(String[] args) {
-//         Scanner sc = new Scanner(System.in);
+// public static void main(String[] args) {
+// Scanner sc = new Scanner(System.in);
 
-//         String color = sc.next();
-//         boolean isEmergencyVehicle = sc.nextBoolean();
+// String color = sc.next();
+// boolean isEmergencyVehicle = sc.nextBoolean();
 
-//         switch (color.toUpperCase()) {
-//             case "RED":
-//                 if (isEmergencyVehicle) {
-//                     System.out.println("Proceed with Caution");
-//                 } else {
-//                     System.out.println("Stop");
-//                 }
-//                 break;
+// switch (color.toUpperCase()) {
+// case "RED":
+// if (isEmergencyVehicle) {
+// System.out.println("Proceed with Caution");
+// } else {
+// System.out.println("Stop");
+// }
+// break;
 
-//             case "YELLOW":
-//                 System.out.println("Prepare to Stop");
-//                 break;
+// case "YELLOW":
+// System.out.println("Prepare to Stop");
+// break;
 
-//             case "GREEN":
-//                 System.out.println("Go");
-//                 break;
+// case "GREEN":
+// System.out.println("Go");
+// break;
 
-//             default:
-//                 System.out.println("Invalid Signal Color");
-//                 break;
-//         }
-//     }
+// default:
+// System.out.println("Invalid Signal Color");
+// break;
+// }
+// }
 // }
 
 // //QUESTION33
@@ -571,23 +572,23 @@
 // import java.util.Scanner;
 
 // public class belt {
-//     public static void main(String[] args) {
-//         Scanner sc = new Scanner(System.in);
-//         int marks = sc.nextInt();
-//         if (marks >= 90 && marks <= 100) {
-//             System.out.println("A");
-//         } else if (marks >= 80 && marks <= 89) {
-//             System.out.println("B");
-//         } else if (marks >= 70 && marks <= 79) {
-//             System.out.println("C");
-//         } else if (marks >= 60 && marks <= 69) {
-//             System.out.println("D");
-//         } else if (marks < 60) {
-//             System.out.println("F");
-//         } else if (marks < 0 || marks > 100) {
-//             System.out.println("Invalid Score");
-//         }
-//     }
+// public static void main(String[] args) {
+// Scanner sc = new Scanner(System.in);
+// int marks = sc.nextInt();
+// if (marks >= 90 && marks <= 100) {
+// System.out.println("A");
+// } else if (marks >= 80 && marks <= 89) {
+// System.out.println("B");
+// } else if (marks >= 70 && marks <= 79) {
+// System.out.println("C");
+// } else if (marks >= 60 && marks <= 69) {
+// System.out.println("D");
+// } else if (marks < 60) {
+// System.out.println("F");
+// } else if (marks < 0 || marks > 100) {
+// System.out.println("Invalid Score");
+// }
+// }
 // }
 
 // //QUESTION34
@@ -595,33 +596,33 @@
 // import java.util.Scanner;
 
 // public class belt {
-//     public static void main(String[] args) {
-//         Scanner sc = new Scanner(System.in);
-//         float number1 = sc.nextFloat();
-//         float number2 = sc.nextFloat();
-//         String opera = sc.next();
+// public static void main(String[] args) {
+// Scanner sc = new Scanner(System.in);
+// float number1 = sc.nextFloat();
+// float number2 = sc.nextFloat();
+// String opera = sc.next();
 
-//         switch (opera) {
-//             case "+":
-//                 System.out.println(number1 + number2);
-//                 break;
-//             case "-":
-//                 System.out.println(number1 - number2);
-//                 break;
-//             case "*":
-//                 System.out.println(number1 * number2);
-//                 break;
-//             case "/":
-//                 if (number2 == 0) {
-//                     System.out.println("Cannot divide by zero");
-//                 } else {
-//                     System.out.println((double) number1 / number2);
-//                 }
-//                 break; // <-- Added this break to prevent fall-through!
-//             default:
-//                 System.out.println("Invalid Operator");
-//         }
-//     }
+// switch (opera) {
+// case "+":
+// System.out.println(number1 + number2);
+// break;
+// case "-":
+// System.out.println(number1 - number2);
+// break;
+// case "*":
+// System.out.println(number1 * number2);
+// break;
+// case "/":
+// if (number2 == 0) {
+// System.out.println("Cannot divide by zero");
+// } else {
+// System.out.println((double) number1 / number2);
+// }
+// break; // <-- Added this break to prevent fall-through!
+// default:
+// System.out.println("Invalid Operator");
+// }
+// }
 // }
 
 // //QUESTION35
@@ -629,52 +630,52 @@
 // import java.util.Scanner;
 
 // public class belt {
-//     public static void main(String[] args) {
-//         Scanner sc = new Scanner(System.in);
-//         int bill = 0;
-//         int age = sc.nextInt();
-//         Boolean isweekend = sc.nextBoolean();
+// public static void main(String[] args) {
+// Scanner sc = new Scanner(System.in);
+// int bill = 0;
+// int age = sc.nextInt();
+// Boolean isweekend = sc.nextBoolean();
 
-//         if (age < 12) {
-//             if (isweekend) {
-//                 bill = 7;
-//             } else {
-//                 bill = 5;
-//             }
-//         } else if (age >= 12 && age <= 59) {
-//             if (isweekend) {
-//                 bill = 15;
-//             } else {
-//                 bill = 10;
-//             }
-//         } else if (age >= 60) {
-//             if (isweekend) {
-//                 bill = 8;
-//             } else {
-//                 bill = 6;
-//             }
-//         }
-//         System.out.println(bill);
-//     }
+// if (age < 12) {
+// if (isweekend) {
+// bill = 7;
+// } else {
+// bill = 5;
+// }
+// } else if (age >= 12 && age <= 59) {
+// if (isweekend) {
+// bill = 15;
+// } else {
+// bill = 10;
+// }
+// } else if (age >= 60) {
+// if (isweekend) {
+// bill = 8;
+// } else {
+// bill = 6;
+// }
+// }
+// System.out.println(bill);
+// }
 // }
 
-//QUESTION36
-import java.io.*;
-import java.util.Scanner;
+// //QUESTION36
+// import java.io.*;
+// import java.util.Scanner;
 
-public class belt {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int percentage = sc.nextInt();
-        float attendance = sc.nextFloat();
-        Boolean hasFailedSubeject = sc.nextBoolean();
+// public class belt {
+// public static void main(String[] args) {
+// Scanner sc = new Scanner(System.in);
+// int percentage = sc.nextInt();
+// float attendance = sc.nextFloat();
+// Boolean hasFailedSubeject = sc.nextBoolean();
 
-        if (attendance >= 85 && percentage >= 80) {
-            if (hasFailedSubeject) {
-                System.out.println("Eligible");
-            } else {
-                System.out.println("Not Eligible");
-            }
-        }
-    }
-}
+// if (attendance >= 85 && percentage >= 80) {
+// if (hasFailedSubeject) {
+// System.out.println("Eligible");
+// } else {
+// System.out.println("Not Eligible");
+// }
+// }
+// }
+// }
