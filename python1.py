@@ -632,36 +632,83 @@
 # print(f"Adjusted: {adjusted}")
 
 #QUESTION47
-n = int(input())
-if n == 0:
-    print("No Scores")
-else:
-    scores = []
-    for i in range(n):
-        scores.append(int(input()))
+# n = int(input())
 
-    total_sum = 0
-    min_score = scores[0]
-    max_score = scores[0]
+# if n == 0:
+#     print("No scores")
+# else:
+#     scores = []
+#     for _ in range(n):
+#         scores.append(int(input()))
 
-    for s in scores:
-        total_sum += s
-        if s < min_score:
-            min_score = s
-        if s > max_score:
-            max_scores = s 
+  
+#     total_sum = 0
+#     min_score = scores[0]
+#     max_score = scores[0]
 
-    avg = total_sum / n
-
-    above_avg = 0
-    for s in scores:
-        if s > avg:
-            above_avg += 1
+#     for s in scores:
+#         total_sum += s
+#         if s < min_score:
+#             min_score = s
+#         if s > max_score:
+#             max_score = s
 
 
-print(f"Count: {n}")
-print(f"Sum: {total_sum}")
-print(f"Minimum: {min_score}")
-print(f"Maximum: {max_score}")
-print(f"Average: {avg:.2f}")
-print(f"Above average: {above_avg}")
+#     avg = total_sum / n
+
+
+#     above_avg = 0
+#     for s in scores:
+#         if s > avg:
+#             above_avg += 1
+
+#     print(f"Count: {n}")
+#     print(f"Sum: {total_sum}")
+#     print(f"Minimum: {min_score}")
+#     print(f"Maximum: {max_score}")
+#     print(f"Average: {avg:.2f}")
+#     print(f"Above average: {above_avg}")
+
+
+#QUESTION48
+# scores = [82, 45, 91, 67, 58]
+# total = 0
+# count = 0
+# largest = scores[0]
+# smallest = scores[0]
+
+# for score in scores:
+#     total += score
+#     count += 1
+#     if score > largest:
+#         largest = score
+#     if score < smallest:
+#         smallest = score
+# if count > 0:
+#     print("count: ",count)
+#     print("Sum: ",total)
+#     print("Min: ", smallest)
+#     print("Max: ", largest)
+#     print("Average: ", total/ count)
+# else:
+#     print("No data avaliable.")
+
+#QUESTION49
+# prices = {"apple": 30, "mango": 40, "Cherry": 50}
+# total = 0
+# count = 0
+# for price in prices.values():
+#     total += price
+#     count += 1
+# if count > 0:
+#     print("Average price:", total/count)
+
+#QUESTION50
+prices = {"apple": 45, "mango": 55, "cherry": 65 }
+best_fruit = ""
+best_price = 0
+for fruit, price in  prices.items():
+    if price > best_price:
+        best_price = price
+        best_fruit = fruit
+print("Most expensive:", best_fruit, "at", best_price)
