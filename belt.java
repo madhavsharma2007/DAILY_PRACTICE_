@@ -167,21 +167,21 @@
 // }
 
 // // QUESTION12
-import java.io.*;
-import java.util.Scanner;
+// import java.io.*;
+// import java.util.Scanner;
 
-public class belt {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int num = sc.nextInt();
+// public class belt {
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         int num = sc.nextInt();
 
-        if (num < 10) {
-            System.out.println("Invalid Number");
-        } else {
-            System.out.println((num / 10) % 10);
-        }
-    }
-}
+//         if (num < 10) {
+//             System.out.println("Invalid Number");
+//         } else {
+//             System.out.println((num / 10) % 10);
+//         }
+//     }
+// }
 
 // // //QUESTION13
 // import java.io.*;
@@ -679,3 +679,89 @@ public class belt {
 // }
 // }
 // }
+
+// //QUESTION37
+// import java.io.*;
+// import java.util.Scanner;
+// public class belt {
+//     public static void main(String[] args) {
+//         Scanner s = new Scanner(System.in);
+//         int n = s.nextInt();
+//         for (int i = 1; i <= n; i++) {
+//             System.out.print(i + " ");
+//         }
+//     }
+// }
+
+// //QUESTION38
+// import java.io.*;
+// import java.util.Scanner;
+// public class belt {
+//     public static void main(String[] args) {
+//         Scanner s = new Scanner(System.in);
+//         for (int i = 1; i <= 3; i++) {
+//             for (int j = 1; j <= 2; j++) {
+//                 System.out.println("i = " + i + " j = " + j);
+//             }
+//         }
+//     }
+// }
+
+// //QUESTION39
+// import java.io.*;
+// import java.util.Scanner;
+// public class belt {
+//     public static void main(String[] args) {
+//         Scanner s = new Scanner(System.in);
+//         for (int count = 0; count <= 6; count++) {
+//             if (count == 3) {
+//                 break;
+//             }
+//             System.out.print(count + " ");
+//         }
+//     }
+// }
+
+// //QUESTION40
+// import java.io.*;
+// import java.util.Scanner;
+// public class belt {
+//     public static void main(String[] args) {
+//         Scanner s = new Scanner(System.in);
+//         int n = s.nextInt();
+//         for (int count = 1; count <= n; count++) {
+//             if (count % 2 == 0) {
+//                 continue;
+//             }
+//             System.out.print(count + " ");
+//         }
+//     }
+// }
+
+// //QUESTION41
+// import java.io.*;
+// import java.util.Scanner;
+// public class belt {
+//     public static void main(String[] args) {
+//         Scanner s = new Scanner(System.in);
+//         int i = 1;
+//         while (i <= 5) {
+//             System.out.println(i);
+//             i++;
+//         }
+//     }
+// }
+
+//QUESTION42
+import java.io.*;
+import java.util.Scanner;
+
+public class belt {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        int i = 1;
+        while (i <= 10) {
+            System.out.println("madhav");
+        }
+    }
+}
