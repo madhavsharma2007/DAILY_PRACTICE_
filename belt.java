@@ -759,9 +759,9 @@ import java.util.Scanner;
 public class belt {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
-        int i = 1;
-        while (i <= 10) {
-            System.out.println("madhav");
+
+        for (int i = 1; i <= 10; i++) {
+            System.out.println(i + " Akshit Sharda");
         }
     }
 }
