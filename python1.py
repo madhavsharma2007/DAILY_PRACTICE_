@@ -704,11 +704,11 @@
 #     print("Average price:", total/count)
 
 #QUESTION50
-prices = {"apple": 45, "mango": 55, "cherry": 65 }
-best_fruit = ""
-best_price = 0
-for fruit, price in  prices.items():
-    if price > best_price:
-        best_price = price
-        best_fruit = fruit
-print("Most expensive:", best_fruit, "at", best_price)
+# prices = {"apple": 45, "mango": 55, "cherry": 65 }
+# best_fruit = ""
+# best_price = 0
+# for fruit, price in  prices.items():
+#     if price > best_price:
+#         best_price = price
+#         best_fruit = fruit
+# print("Most expensive:", best_fruit, "at", best_price)
