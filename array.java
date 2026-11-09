@@ -148,26 +148,62 @@
 // }
 
 //QUESTION 8(ADDING ALL VALUE IN 2D ARRAY)
-import java.io.*;
+// import java.io.*;
+// import java.util.Scanner;
+// public class array {
+//     public static void main(String[] args) {
+//         int arr[][] = {
+//                 { 2, 3, 4 },
+//                 { 5, 6, 7 },
+//                 { 9, 8, 7 }
+//         };
+
+//         int rowsize = arr.length;
+//         int colmsize = arr[0].length;
+
+//         int sum = 0;
+//         for (int rowIndex = 0; rowIndex < rowsize; rowIndex++) {
+//             for (int colmIndex = 0; colmIndex < colmsize; colmIndex++) {
+//                 sum = sum + arr[rowIndex][colmIndex];
+//             }
+//         }
+//         System.out.println("overall sum: " + sum);
+//     }
+// }
+
+//QUESTION 9(PRINTING ALL THE VOWELS WITH THE SPACING)
+// import java.io.*;
+// import java.util.Scanner;
+// public class array {
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         String text = sc.nextLine();
+//         for (int i = 0; i < text.length(); i++) {
+//             char c = text.charAt(i);
+//             if ("aeiouAEIOU".indexOf(c) != -1) {
+//                 System.out.print(c + " ");
+//             }
+//         }
+//     }
+// }
+
+//QUESTION 10(COUNT THE GIVEN  NUMBER IN THE STRING)
 import java.util.Scanner;
+import java.io.*;
 
 public class array {
     public static void main(String[] args) {
-        int arr[][] = {
-                { 2, 3, 4 },
-                { 5, 6, 7 },
-                { 9, 8, 7 }
-        };
+        Scanner sc = new Scanner(System.in);
+        String s = sc.next();
+        char ch = sc.next().charAt(0);
 
-        int rowsize = arr.length;
-        int colmsize = arr[0].length;
-
-        int sum = 0;
-        for (int rowIndex = 0; rowIndex < rowsize; rowIndex++) {
-            for (int colmIndex = 0; colmIndex < colmsize; colmIndex++) {
-                sum = sum + arr[rowIndex][colmIndex];
+        int count = 0;
+        for (int i = 0; i < s.length(); i++) {
+            if (s.charAt(i) == ch) {
+                count++;
             }
         }
-        System.out.println("overall sum: " + sum);
+        System.out.println("count : " + count);
+        sc.close();
     }
 }
