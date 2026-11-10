@@ -188,22 +188,46 @@
 // }
 
 //QUESTION 10(COUNT THE GIVEN  NUMBER IN THE STRING)
-import java.util.Scanner;
+// import java.util.Scanner;
+// import java.io.*;
+// public class array {
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         String s = sc.next();
+//         char ch = sc.next().charAt(0);
+//         int count = 0;
+//         for (int i = 0; i < s.length(); i++) {
+//             if (s.charAt(i) == ch) {
+//                 count++;
+//             }
+//         }
+//         System.out.println("count : " + count);
+//         sc.close();
+//     }
+// }
+
+//QUESTION 11(COUNTING VOWELCOUNT AND CONSONANTCOUNT)
 import java.io.*;
+import java.util.Scanner;
 
 public class array {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        String s = sc.next();
-        char ch = sc.next().charAt(0);
+        String s = sc.nextLine();
 
-        int count = 0;
+        int vowelCount = 0;
+        int consonantCount = 0;
         for (int i = 0; i < s.length(); i++) {
-            if (s.charAt(i) == ch) {
-                count++;
+            char c = s.charAt(i);
+            if (Character.isLetter(c)) {
+                if ("aeiouAEIOU".indexOf(c) != -1) {
+                    vowelCount++;
+                } else {
+                    consonantCount++;
+                }
             }
         }
-        System.out.println("count : " + count);
+        System.out.println(vowelCount + " " + consonantCount);
         sc.close();
     }
 }
