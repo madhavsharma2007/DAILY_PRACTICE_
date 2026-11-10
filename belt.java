@@ -753,15 +753,13 @@
 // }
 
 //QUESTION42
-import java.io.*;
-import java.util.Scanner;
-
-public class belt {
-    public static void main(String[] args) {
-        Scanner s = new Scanner(System.in);
-
-        for (int i = 1; i <= 10; i++) {
-            System.out.println(i + " Akshit Sharda");
-        }
-    }
-}
+// import java.io.*;
+// import java.util.Scanner;
+// public class belt {
+//     public static void main(String[] args) {
+//         Scanner s = new Scanner(System.in);
+//         for (int i = 1; i <= 10; i++) {
+//             System.out.println(i + " Akshit Sharda");
+//         }
+//     }
+// }
