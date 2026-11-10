@@ -207,27 +207,41 @@
 // }
 
 //QUESTION 11(COUNTING VOWELCOUNT AND CONSONANTCOUNT)
+// import java.io.*;
+// import java.util.Scanner;
+// public class array {
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         String s = sc.nextLine();
+//         int vowelCount = 0;
+//         int consonantCount = 0;
+//         for (int i = 0; i < s.length(); i++) {
+//             char c = s.charAt(i);
+//             if (Character.isLetter(c)) {
+//                 if ("aeiouAEIOU".indexOf(c) != -1) {
+//                     vowelCount++;
+//                 } else {
+//                     consonantCount++;
+//                 }
+//             }
+//         }
+//         System.out.println(vowelCount + " " + consonantCount);
+//         sc.close();
+//     }
+// }
+
+//QUESTION 12(REVERSING THE STRING AND NUMBERS)
 import java.io.*;
 import java.util.Scanner;
 
 public class array {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        String s = sc.nextLine();
+        String text = sc.nextLine();
 
-        int vowelCount = 0;
-        int consonantCount = 0;
-        for (int i = 0; i < s.length(); i++) {
-            char c = s.charAt(i);
-            if (Character.isLetter(c)) {
-                if ("aeiouAEIOU".indexOf(c) != -1) {
-                    vowelCount++;
-                } else {
-                    consonantCount++;
-                }
-            }
+        for (int i = text.length() - 1; i >= 0; i--) {
+            System.out.print(text.charAt(i));
         }
-        System.out.println(vowelCount + " " + consonantCount);
-        sc.close();
     }
+
 }
