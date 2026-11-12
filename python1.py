@@ -712,3 +712,49 @@
 #         best_price = price
 #         best_fruit = fruit
 # print("Most expensive:", best_fruit, "at", best_price)
+
+#QUESTION51
+# words = ["zero", "one","two","three","four","five","six","seven","eight","nine"]
+# n = int(input().strip())
+
+# if n == 0:
+#     print("zero")
+# else:
+#     result = []
+#     while n > 0:
+#         last_digit = n % 10
+#         result.append(words[last_digit])
+#         n //= 10
+#     print(" ".join(result))
+
+
+#QUESTION52
+# def calculate_discount(price):
+#     return price * 0.90
+# prices = [100, 250, 400]
+# for items_price in prices:
+#     final_price = calculate_discount(items_price)
+#     print(f"original: {items_price} -> Discounted price: {final_price}")
+
+
+#QUESTION53
+# 1. Define the function using n**0.5
+def is_prime(n):
+    if n <= 1:
+        return False
+    for i in range(2, int(n**0.5) + 1):
+        if n % i == 0:
+            return False
+    return True
+
+# 2. Check an array (list) of numbers
+numbers = [1, 4, 5, 7, 13, 17, 56, 46]
+primes = []
+
+for num in numbers:
+    if is_prime(num):
+        primes.append(num)
+
+print("Prime numbers:", primes)
+
+
