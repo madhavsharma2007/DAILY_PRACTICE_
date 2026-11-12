@@ -88,19 +88,19 @@
 #     print()
 
 #QUESTION 7 (transpose of matrix)
-nums = [[2, 3, 1], [3, 4, 9] , [4,12,6]]
-rows = len(nums)
-colm = len(nums[0])
+# nums = [[2, 3, 1], [3, 4, 9] , [4,12,6]]
+# rows = len(nums)
+# colm = len(nums[0])
 
-# Initialize a new matrix with swapped dimensions (4 rows x 3 columns) filled with zeros
-transpose = [[0 for _ in range(rows)] for _ in range(colm)]
+# # Initialize a new matrix with swapped dimensions (4 rows x 3 columns) filled with zeros
+# transpose = [[0 for _ in range(rows)] for _ in range(colm)]
 
-# Populate the transpose matrix without using functions
-for i in range(rows):
-    for j in range(colm):
-        transpose[j][i] = nums[i][j]
+# # Populate the transpose matrix without using functions
+# for i in range(rows):
+#     for j in range(colm):
+#         transpose[j][i] = nums[i][j]
 
-# Print the transposed result
-print("Transposed Matrix:")
-for row in transpose:
-    print(row)
+# # Print the transposed result
+# print("Transposed Matrix:")
+# for row in transpose:
+#     print(row)
