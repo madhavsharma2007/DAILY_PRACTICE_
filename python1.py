@@ -738,23 +738,85 @@
 
 
 #QUESTION53
-# 1. Define the function using n**0.5
-def is_prime(n):
-    if n <= 1:
-        return False
-    for i in range(2, int(n**0.5) + 1):
-        if n % i == 0:
-            return False
-    return True
+# def is_prime(n):
+#     if n <= 1:
+#         return False
+#     for i in range(2, int(n**0.5) + 1):
+#         if n % i == 0:
+#             return False
+#     return True
 
-# 2. Check an array (list) of numbers
-numbers = [1, 4, 5, 7, 13, 17, 56, 46]
-primes = []
+# numbers = [1, 4, 5, 7, 13, 17, 56, 46]
+# primes = []
 
-for num in numbers:
-    if is_prime(num):
-        primes.append(num)
+# for num in numbers:
+#     if is_prime(num):
+#         primes.append(num)
 
-print("Prime numbers:", primes)
+# print("Prime numbers:", primes)
 
 
+#QUESTION54 (FIBONACCI SERIES)
+# a,b,n = map(int, input().split())
+# total = 0
+# for  i in range(n):
+#     print(a, end = " ")
+#     total += a 
+#     next_term = a + b
+#     a  = b
+#     b = next_term
+# print()
+# print(total)
+
+#QUESTION55 (SUM SQAURE DIFFERENCE)
+# n = int(input())
+# total1 = 0
+# total2 = 0
+# for i in range(1,n+1):
+#     total1 += i ** 2
+#     total2 += i
+# print(abs(total2**2) - total1)
+
+#QUESTION56 (PRINTING SQAURE OF EACH DIGIT IN NUM)
+# num = int(input())
+# while num > 0:
+#     last_digit = num % 10
+#     sqaure = last_digit * last_digit
+#     num //= 10
+#     print(sqaure, end=" ")
+
+#QUESTION57 (Minimum Sum of Four Digit Number After Splitting Digits)
+# num = int(input())
+# arr = []
+# while num > 0:
+#     arr.append(num % 10)
+#     num //=10
+# arr.sort()
+# new1 = arr[0]*10 + arr[3]
+# new2 = arr[1]*10 + arr[2]
+# print(new1 + new2)
+
+#QUESTION58 ( PRINT THE FREQUENCY OF EACH NUMBER IN DIGIT)
+# num = int(input())
+# freq = [0] * 10
+# while num > 0:
+#     digit =  num % 10
+#     freq[digit] += 1
+#     num //= 10
+# for i in range(10):
+#     if freq[i] > 0:
+#         print(f"{i}:{freq[i]}")
+
+#QUESTION59 ( Print each digit in words)
+num = int(input())
+words = ["zero","one","two","three","four","five","six","seven","eight","nine"]
+if num == 0:
+    print("zero")
+else:
+    while num > 0:
+        digit = num % 10
+        num //= 10
+        if num > 0:
+            print(words[digit], end=" ")
+        else:
+            print(words[digit])
